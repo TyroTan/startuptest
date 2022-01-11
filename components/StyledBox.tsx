@@ -57,7 +57,7 @@ export const StyledBoxShadowed = (props: any) => {
       backgroundColor={theme.colors.main}
       variant="cardButton"
       style={[
-        { shadowColor: "black" },
+        { shadowColor: "black", minWidth: mscale(100) },
         {
           shadowOffset: {
             width: 0,

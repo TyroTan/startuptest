@@ -10,6 +10,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
         <View style={styles.container}>
+          <View style={{ height: 200 }} />
           <Question />
         </View>
       </SafeAreaProvider>
@@ -20,9 +21,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    // position: "absolute",
     backgroundColor: theme.colors.background,
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
 
